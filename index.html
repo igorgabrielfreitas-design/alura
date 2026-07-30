@@ -1,4 +1,3 @@
-minuto 6.18
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -14,6 +13,7 @@ minuto 6.18
                 margin: 0 auto;
                 padding: 16px;
                 border: 5px solid #00008B;
+                
             }
             main {
                 background-color: #FFFFFF;
@@ -30,8 +30,10 @@ minuto 6.18
             .artigo-autor {
                 font-weight: bold;
             }
+                
         </style>
     </head>
+    
     <body>
         <header>
             <h1>Minha página sobre nutrição</h1>
@@ -43,8 +45,20 @@ minuto 6.18
             <div>
             <h2>Meu primeiro post</h2>
             <p class="artigo-autor">Por: Igor Gabriel de freitas</p> <p>Boas vindas ao meu novo tema de nutrição! Aqui vou compartilhar dicas para ter uma boa alimentação.</p>
+                <button>👍 <span>0</span>0</button>
             </div>
+            
         </main>   
-        
-    </body>
+</body>
+<script>
+    const botao = document.querySelector("button");
+    botao.addEventListenner("click",botaoClicado);
+
+    function botaoClicado(){
+        console.log("fui cliacado");
+        let texto = botao.querySelector("span");
+        texto.textContent++;
+    }
+    
+</script>
 </html>
