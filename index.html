@@ -50,13 +50,15 @@
             <div>
             <h2>Meu primeiro post</h2>
             <p class="artigo-autor">Por: Igor Gabriel de freitas</p> <p>Boas vindas ao meu novo tema de nutrição! Aqui vou compartilhar dicas para ter uma boa alimentação.</p>
-                <button>👍 <span>0</span>0</button>
+                <button>👍 <span>0</span></button>
+                <button>👎 <span>0</span></button>
+
             </div>
             
         </main>   
 </body>
 <script>
-    const botao = document.querySelector("button");
+    const botao = document.querySelectorAll("button");
     botao.addEventListenner("click",botaoClicado);
 
     function botaoClicado(){
