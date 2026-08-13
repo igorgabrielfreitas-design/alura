@@ -12,49 +12,57 @@
                 max-windth: 800px;
                 margin: 0 auto;
                 padding: 16px;
-                border: 5px solid #00008B;
+                border:5px solid #00008B;
                 
             }
-            main {
+            main{
                 background-color: #FFFFFF;
                 color: #113760;
                 text-align: center;
                 max-windth: 800px;
                 margin: 0 auto;
                 padding: 16px;
+            }
+            article{
                 display: flex;
             }
-
             img
             margin: 0 auto;
             height:80px
-            imag{
+            img{
                 width: 80px;
                 height: 80px
             }
-            .artigo-autor {
+            .artigo autor {
                 font-weight: bold;
             }
                 
         </style>
     </head>
-    
     <body>
         <header>
             <h1>Minha página sobre nutrição</h1>
             <p>Aqui vou compartilhar fatos de como ter uma melhor alimentação em nosso cotidiano, de forma didática e acessível a todos.</p>
         </header>
-        
         <main>
+            <article>
             <img src="Alimentos.png" alt="escudodaseleçãobrasileira">
             <div>
             <h2>Meu primeiro post</h2>
             <p class="artigo-autor">Por: Igor Gabriel de freitas</p> <p>Boas vindas ao meu novo tema de nutrição! Aqui vou compartilhar dicas para ter uma boa alimentação.</p>
                 <button>👍 <span>0</span></button>
-                <button>👎 <span>5</span></button>
-
+                <button>👎 <span>0</span></button>
             </div>
-            
+             </article>
+             <article>
+            <img src="Alimentos.png" alt="escudodaseleçãobrasileira">
+            <div>
+            <h2>Meu primeiro post</h2>
+            <p class="artigo-autor">Por: Igor Gabriel de freitas</p> <p>Boas vindas ao meu novo tema de nutrição! Aqui vou compartilhar dicas para ter uma boa alimentação.</p>
+                <button>👍 <span>0</span></button>
+                <button>👎 <span>0</span></button>
+            </div>
+             </article>
         </main>   
 </body>
 <script>
@@ -62,7 +70,6 @@
 
     botoes.forEach(function(botao) {
     botao.addEventListener("click",botaoClicado);
-
     function botaoClicado(){
         console.log("fui cliacado");
         let texto = botao.querySelector("span");
